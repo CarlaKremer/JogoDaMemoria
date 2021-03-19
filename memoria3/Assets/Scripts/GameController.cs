@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void AddGamePuzzles()
+    void AddGamePuzzles() //colocando cartas do jogo
     {
         int looper = btns.Count;
         int index = 0;
@@ -74,16 +74,16 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void AddListeners()
+    void AddListeners() //para identificar quando o jogador selecionar uma peça
     {
-        foreach (Button btn in btns) //
+        foreach (Button btn in btns) 
         {
             btn.onClick.AddListener(() => PickAPuzzle());
         }
         
     }
    
-    public void PickAPuzzle()
+    public void PickAPuzzle() //para quando o jogador seleciona uma peça
     {
         
         string name = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
@@ -94,6 +94,7 @@ public class GameController : MonoBehaviour
         {
             
             firstGuess = true;
+
             //pega o nome da carta para comparar:
             firstGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
 
@@ -112,6 +113,7 @@ public class GameController : MonoBehaviour
             currentButton.interactable = true;  //reativa o primeiro botão
        
             secondGuess = true;
+
             //pega o nome da carta para comparar
             secondGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
 
