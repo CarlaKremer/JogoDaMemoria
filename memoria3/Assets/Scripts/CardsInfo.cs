@@ -40,25 +40,26 @@ public class CardsInfo : MonoBehaviour
 
         nameInfo = gcs.infoName;  //pega o nome da carta para saber qual informação exibir
         
-        if (nameInfo == "bear icon")
+        if (nameInfo == "pix")
         {
             Pause();
             typeCard.text = "Você achou o Pix !";
-            typeInfo.text = "O Pix é................................";
+            typeInfo.text = "O Pix é um novo meio de pagamento instantâneo criado pelo Banco Central, as transferências podem ser feitas " +
+                "a qualquer momento e são realizadas através do aplicativo de Internet Banking de sua Instituição. ";
         }
-        if (nameInfo == "parrot icon")
+        if (nameInfo == "qr")
         {
             Pause();
             typeCard.text = "Você achou o Código QR!";
             typeInfo.text = "O Código QR é.............";
         }
-        if (nameInfo == "koala icon")
+        if (nameInfo == "codigoDeBarras")
         {
             Pause();
             typeCard.text = "Você achou o Código de Barras!";
             typeInfo.text = "O Código de Barras é ...................";
         }
-        if (nameInfo == "eagle icon")
+        if (nameInfo == "cadeado")
         {
             Pause();
             typeCard.text = "Você achou o Cadeado!";

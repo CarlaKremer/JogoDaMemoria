@@ -139,30 +139,32 @@ public class GameController : MonoBehaviour
             {
                 print("Ah não! Você achou o vírus!");
 
+               countCorrectGuesses--; //evita de mostrar a tela de fim caso seja a penúltima combinação
+
                 yield return new WaitForSeconds(.5f);
                 
                 FindObjectOfType<Screens>().VirusScreen();//mostra a tela de aviso do vírus e o jogo reinicia
                 
             }
-            if (secondGuessPuzzle == "bear icon")
+            if (secondGuessPuzzle == "pix")
             {
                 print("Você achou o Pix! o pix é....");
                 FindObjectOfType<CardsInfo>().OpenInfo();  //exibe informações desta carta
 
             }
-            if (secondGuessPuzzle == "parrot icon")
+            if (secondGuessPuzzle == "cadeado")
             {
                 print("Você achou o cadeado!");
                 FindObjectOfType<CardsInfo>().OpenInfo();
             }
 
-            if (secondGuessPuzzle == "eagle icon")
+            if (secondGuessPuzzle == "qr")
             {
                 print("Você achou o código QR!");
                 FindObjectOfType<CardsInfo>().OpenInfo();
             }
 
-            if (secondGuessPuzzle == "koala icon")
+            if (secondGuessPuzzle == "codigoDeBarras")
             {
                 print("Você achou o código de barras!");
                 FindObjectOfType<CardsInfo>().OpenInfo();
