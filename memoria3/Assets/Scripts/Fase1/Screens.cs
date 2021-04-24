@@ -10,6 +10,8 @@ public class Screens : MonoBehaviour
 
     public GameObject VirusScreenUI;
     public GameObject GameEndedUI;
+    public GameObject InstructionsUI;
+    public GameObject NextFaseUI;
 
     GameObject Gc; //Gc: GameController
     GameController Gcs;  
@@ -38,5 +40,15 @@ public class Screens : MonoBehaviour
     public void ResetButton()//função que está no botão de reinicialização
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void DisableInstructions()
+    {
+        InstructionsUI.SetActive(false);
+    }
+
+    public void NextFase()
+    {
+        NextFaseUI.SetActive(false);
     }
 }

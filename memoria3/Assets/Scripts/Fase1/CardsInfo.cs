@@ -66,7 +66,7 @@ public class CardsInfo : MonoBehaviour
             Pause();
             typeCard.text = "Você achou o Cadeado!";
             typeInfo.text = "O cadeado pode ser visto no seu navegador ao lado do endereço eletrônico acessado, caso ele esteja fechado significa" +
-                            " que o site que está sendo acessado possui um protocolo de segurânça HTTPS.";
+                            " que o site que está sendo acessado possui um protocolo de segurânça extra e serão criptografados em uma conexão que será verificada pelo servidor.";
         }
     }
 }
