@@ -52,7 +52,7 @@ public class CardsInfo : MonoBehaviour
             Pause();
             typeCard.text = "Você achou o Código QR!";
             typeInfo.text = "O Código QR, assim como o código de barras um meio de armazenar informações e pode ser lido pela câmera do celular," +
-                            " muito utilizado para armazenar endereços eletrônicos e para realização de pagamentos instantâneos.";
+                            " muito utilizado para armazenar endereços eletrônicos e para realizaÇão de pagamentos instantâneos.";
         }
         if (nameInfo == "codigoDeBarras")
         {
@@ -66,7 +66,7 @@ public class CardsInfo : MonoBehaviour
             Pause();
             typeCard.text = "Você achou o Cadeado!";
             typeInfo.text = "O cadeado pode ser visto no seu navegador ao lado do endereço eletrônico acessado, caso ele esteja fechado significa" +
-                            " que o site que está sendo acessado possui um protocolo de segurânça extra e serão criptografados em uma conexão que será verificada pelo servidor.";
+                            " que o site que está sendo acessado possui um protocolo de segurânÇa extra e serão criptografados em uma conexão que será verificada pelo servidor.";
         }
     }
 }
