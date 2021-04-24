@@ -52,7 +52,7 @@ public class CardsInfo : MonoBehaviour
             Pause();
             typeCard.text = "Você achou o Código QR!";
             typeInfo.text = "O Código QR, assim como o código de barras um meio de armazenar informações e pode ser lido pela câmera do celular," +
-                            " muito utilizado para armazenar endereços eletrônicos e para realizamenção de pagamentos instantâneos.";
+                            " muito utilizado para armazenar endereços eletrônicos e para realização de pagamentos instantâneos.";
         }
         if (nameInfo == "codigoDeBarras")
         {
