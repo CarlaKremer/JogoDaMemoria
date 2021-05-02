@@ -135,7 +135,7 @@ public class GameController2 : MonoBehaviour
         {
             infoName = secondGuessPuzzle; //para saber qual info  exbir no script "CardsInfo"
 
-            if (secondGuessPuzzle == "virus icon")  // caso sejam as cartas do vírus
+            if (secondGuessPuzzle == "virus")  // caso sejam as cartas do vírus
             {
                 print("Ah não! Você achou o vírus!");
 
@@ -146,27 +146,27 @@ public class GameController2 : MonoBehaviour
                 FindObjectOfType<Screens2>().VirusScreen();//mostra a tela de aviso do vírus e o jogo reinicia
 
             }
-            if (secondGuessPuzzle == "alerta")
+            if (secondGuessPuzzle == "share")
             {
-                print("Você achou o Pix! o pix é....");
+                print("Você achou o compartilhar....");
                 FindObjectOfType<CardsInfo2>().OpenInfo();  //exibe informações desta carta
 
             }
-            if (secondGuessPuzzle == "lixo")
+            if (secondGuessPuzzle == "bluetooth")
             {
-                print("Você achou o cadeado!");
+                print("Você achou o bluetooth!");
                 FindObjectOfType<CardsInfo2>().OpenInfo();
             }
 
             if (secondGuessPuzzle == "wifi")
             {
-                print("Você achou o código QR!");
+                print("Você achou o Wifi!");
                 FindObjectOfType<CardsInfo2>().OpenInfo();
             }
 
-            if (secondGuessPuzzle == "bluetooth")
+            if (secondGuessPuzzle == "web")
             {
-                print("Você achou o código de barras!");
+                print("Você achou a Web!");
                 FindObjectOfType<CardsInfo2>().OpenInfo();
             }
 

@@ -42,30 +42,33 @@ public class CardsInfo2 : MonoBehaviour
 
         
         
-        if (nameInfo == "alerta")
+        if (nameInfo == "web")
         {
-            Debug.Log("Alerta");
+            Debug.Log("Web");
             Pause();
-            typeCard.text = "Você achou o alerta!";
-            typeInfo.text = "O alerta é...........";
+            typeCard.text = "Você achou a Web!";
+            typeInfo.text = "Esta ícone simboliza páginas da web, sites, que você pode acessar através de computadores, celulares, entre outros.";
         }
         if (nameInfo == "bluetooth")
         {
             Pause();
             typeCard.text = "Você achou o Bluetooth!";
-            typeInfo.text = "o Bluetooth é.......";
+            typeInfo.text = "O Bluetooth é um meio de"+
+                           " transferir dados sem fios, em pequenas distâncias, esse dados podem ser arquivos; sons, como músicas e chamadas de voz;"+
+                           " controlar dispositivos, entre outros.";
         }
-        if (nameInfo == "lixo")
+        if (nameInfo == "share")
         {
             Pause();
-            typeCard.text = "Você achou a Lixeira!";
-            typeInfo.text = "A lixeira é ...................";
+            typeCard.text = "Você achou o Compartilhar!";
+            typeInfo.text = "O botão Compartilhar, muitas vezes visto em redes sociais, é uma maneira fácil de compartilhar conteúdo com outras"+
+                            " pessoas, pois todas os meios de compartilhamento estarão agrupados naquele botão.";
         }
         if (nameInfo == "wifi")
         {
             Pause();
             typeCard.text = "Você achou o Wi-fi!";
-            typeInfo.text = "O Wi-fi é ...................";
+            typeInfo.text = "O Wi-fi é um meio de se acessar a internet sem a necessidade de cabos, é necessário apenas estar na área de abrangência de seu sinal.";
         }
     }
 }

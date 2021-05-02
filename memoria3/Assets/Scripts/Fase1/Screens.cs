@@ -32,9 +32,11 @@ public class Screens : MonoBehaviour
         VirusScreenUI.SetActive(true);
     }
 
-    public void NextScene()
+    public void NextScene() //carrega próxima fase
     {
+        NextFaseUI.SetActive(false);
         SceneManager.LoadScene("Fase2");
+        
     }
 
     public void ResetButton()//função que está no botão de reinicialização
@@ -42,13 +44,13 @@ public class Screens : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void DisableInstructions()
+    public void DisableInstructions()//desativa tela de instruções
     {
         InstructionsUI.SetActive(false);
     }
 
     public void NextFase()
     {
-        NextFaseUI.SetActive(false);
+        NextFaseUI.SetActive(true);
     }
 }

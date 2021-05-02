@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 //informações das cartas encontradas
 public class CardsInfo : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class CardsInfo : MonoBehaviour
 
     public Text typeCard;
     public Text typeInfo;
+    
+    Sprite typeImage;
+    public Image imageT;
 
     public static string nameInfo;
 
@@ -34,7 +38,6 @@ public class CardsInfo : MonoBehaviour
 
     public void OpenInfo()
     {
-        //exibe a informação da respectiva carta encontrada
         gc = GameObject.Find("GameController");
         gcs = gc.GetComponent<GameController>();
 
@@ -46,27 +49,39 @@ public class CardsInfo : MonoBehaviour
             typeCard.text = "Você achou o Pix !";
             typeInfo.text = "O Pix é um novo meio de pagamento instantâneo criado pelo Banco Central, as transferências podem ser feitas " +
                             "a qualquer momento e são realizadas através do aplicativo de Internet Banking de sua Instituição. ";
+            
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/pix");
+            imageT.sprite = typeImage;
         }
         if (nameInfo == "qr")
         {
             Pause();
             typeCard.text = "Você achou o Código QR!";
-            typeInfo.text = "O Código QR, assim como o código de barras um meio de armazenar informações e pode ser lido pela câmera do celular," +
+            typeInfo.text = "O Código QR, assim como o código de barras é um meio de armazenar informações e pode ser lido pela câmera do celular," +
                             " muito utilizado para armazenar endereços eletrônicos e para realizaÇão de pagamentos instantâneos.";
+            
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/qr");
+            imageT.sprite = typeImage;
         }
-        if (nameInfo == "codigoDeBarras")
+        if (nameInfo == "barra")
         {
             Pause();
             typeCard.text = "Você achou o Código de Barras!";
             typeInfo.text = "O Código de Barras é utilizado para representar uma sequência de números, que pode ser lido por meio de scanners " +
                             "ou até pelo celular, o que pode vir a ser útil, para pagamento de boletos sem a necessidade de ir a um banco ou lotérica.";
+            
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/barra");
+            imageT.sprite = typeImage;
         }
         if (nameInfo == "cadeado")
         {
             Pause();
             typeCard.text = "Você achou o Cadeado!";
             typeInfo.text = "O cadeado pode ser visto no seu navegador ao lado do endereço eletrônico acessado, caso ele esteja fechado significa" +
-                            " que o site que está sendo acessado possui um protocolo de segurânÇa extra e serão criptografados em uma conexão que será verificada pelo servidor.";
+                            " que o site que está sendo acessado possui um protocolo de segurânça extra e serão criptografados em uma conexão que será verificada pelo servidor.";
+            
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/cadeado");
+            imageT.sprite = typeImage;
         }
     }
 }

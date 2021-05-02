@@ -1,0 +1,114 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'pt' Physical Memory: 8111 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+52348
+Successfully changed project path to: C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
+C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 150.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 820M (ID=0x1140)
+    Vendor:   
+    VRAM:     2000 MB
+    Driver:   22.21.13.8205
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.096137 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 129.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.642 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002632 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 145.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.459 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.87 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.0 MB.
+System memory in use after: 105.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2287.
+Total: 3.135600 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.085600 ms MarkObjects: 2.699300 ms  DeleteObjects: 0.085900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Sprites/Icons/bluetooth.png
+  artifactKey: Guid(94de95487e2718340a3c2f2a6e33e0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Icons/bluetooth.png using Guid(94de95487e2718340a3c2f2a6e33e0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050f421381641b3bae5a470345abe95d') in 2.233961 seconds
+  Import took 2.292494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000865 seconds.
+  path: Assets/Resources/Sprites/Icons/pix.png
+  artifactKey: Guid(45cdc644379f2aa4f9dc176046c9c371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Icons/pix.png using Guid(45cdc644379f2aa4f9dc176046c9c371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca6be82711c14f72c036271c5c1b1c4') in 0.070149 seconds
+  Import took 0.163674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Resources/Sprites/Icons/qr.png
+  artifactKey: Guid(4014abcbc4bbb3b42add07f84e164510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Icons/qr.png using Guid(4014abcbc4bbb3b42add07f84e164510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d0c6c03f89f37cffbb528b0ef5b879') in 0.152509 seconds
+  Import took 0.160038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000625 seconds.
+  path: Assets/Resources/Sprites/Icons/barra.png
+  artifactKey: Guid(bd1580a7b3879974d900592d80889286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Icons/barra.png using Guid(bd1580a7b3879974d900592d80889286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25edd8b436cacb00de72e43afce76ba') in 0.102915 seconds
+  Import took 0.131461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Resources/Sprites/Icons/cadeado.png
+  artifactKey: Guid(fd751730493829647b7e4cc08577f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Icons/cadeado.png using Guid(fd751730493829647b7e4cc08577f21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2078bf9869cb66247afb12f3807fbafb') in 0.236641 seconds
+  Import took 0.269613 seconds .
+

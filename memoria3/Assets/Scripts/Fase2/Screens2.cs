@@ -34,4 +34,5 @@ public class Screens2 : MonoBehaviour
     {
         SceneManager.LoadScene("Fase2");
     }
+
 }

@@ -104,7 +104,7 @@ public class GameController : MonoBehaviour
 
             currentButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
             currentButton.interactable = false; //desativa esse botão para evitar o clique duplo
-
+            //currentButton.Color
 
         }
         else if (!secondGuess)
@@ -135,7 +135,7 @@ public class GameController : MonoBehaviour
         {
             infoName = secondGuessPuzzle; //para saber qual info  exbir no script "CardsInfo"
 
-            if (secondGuessPuzzle == "virus icon")  // caso sejam as cartas do vírus
+            if (secondGuessPuzzle == "virus")  // caso sejam as cartas do vírus
             {
                 print("Ah não! Você achou o vírus!");
 
@@ -164,7 +164,7 @@ public class GameController : MonoBehaviour
                 FindObjectOfType<CardsInfo>().OpenInfo();
             }
 
-            if (secondGuessPuzzle == "codigoDeBarras")
+            if (secondGuessPuzzle == "barra")
             {
                 print("Você achou o código de barras!");
                 FindObjectOfType<CardsInfo>().OpenInfo();
