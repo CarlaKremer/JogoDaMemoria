@@ -1,9 +1,10 @@
-﻿using System.Collections;
+//controla funções dos botões presentes nas telas
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-  //telas de fim e de vírus
+
 public class Screens : MonoBehaviour
 {
     public Text movements;
@@ -11,7 +12,6 @@ public class Screens : MonoBehaviour
     public GameObject VirusScreenUI;
     public GameObject GameEndedUI;
     public GameObject InstructionsUI;
-    public GameObject NextFaseUI;
 
     GameObject Gc; //Gc: GameController
     GameController Gcs;  
@@ -34,9 +34,7 @@ public class Screens : MonoBehaviour
 
     public void NextScene() //carrega próxima fase
     {
-        NextFaseUI.SetActive(false);
         SceneManager.LoadScene("Fase2");
-        
     }
 
     public void ResetButton()//função que está no botão de reinicialização
@@ -49,8 +47,4 @@ public class Screens : MonoBehaviour
         InstructionsUI.SetActive(false);
     }
 
-    public void NextFase()
-    {
-        NextFaseUI.SetActive(true);
-    }
 }

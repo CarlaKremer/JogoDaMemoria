@@ -15,11 +15,11 @@ C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52348
+56927
 Successfully changed project path to: C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
 C:/Users/Carla/Documents/GitHub/Unity/JogoDaMemoria/JogoDaMemoria/memoria3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 90.61 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 236.17 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,5 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
 Begin MonoManager ReloadAssembly

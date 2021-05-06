@@ -164,9 +164,9 @@ public class GameController2 : MonoBehaviour
                 FindObjectOfType<CardsInfo2>().OpenInfo();
             }
 
-            if (secondGuessPuzzle == "web")
+            if (secondGuessPuzzle == "download")
             {
-                print("Você achou a Web!");
+                print("Você achou o Download!");
                 FindObjectOfType<CardsInfo2>().OpenInfo();
             }
 

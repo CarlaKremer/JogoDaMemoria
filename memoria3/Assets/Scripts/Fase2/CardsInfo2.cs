@@ -14,6 +14,8 @@ public class CardsInfo2 : MonoBehaviour
 
     public Text typeCard;
     public Text typeInfo;
+    Sprite typeImage;
+    public Image imageT;
 
     public static string nameInfo;
 
@@ -42,12 +44,15 @@ public class CardsInfo2 : MonoBehaviour
 
         
         
-        if (nameInfo == "web")
+        if (nameInfo == "download")
         {
-            Debug.Log("Web");
+            Debug.Log("download");
             Pause();
-            typeCard.text = "Você achou a Web!";
-            typeInfo.text = "Esta ícone simboliza páginas da web, sites, que você pode acessar através de computadores, celulares, entre outros.";
+            typeCard.text = "Você achou o Download!";
+            typeInfo.text = "O ícone de download aparecerá quando for possível salvar um arquivo em seu dispositivo para que possa ser acessado no momento"+
+                            " em que desejar sem a necessidade de internet, este arquivo pode ser uma foto, vídeo, documento, entre outros.";
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/download");
+            imageT.sprite = typeImage;
         }
         if (nameInfo == "bluetooth")
         {
@@ -56,6 +61,8 @@ public class CardsInfo2 : MonoBehaviour
             typeInfo.text = "O Bluetooth é um meio de"+
                            " transferir dados sem fios, em pequenas distâncias, esse dados podem ser arquivos; sons, como músicas e chamadas de voz;"+
                            " controlar dispositivos, entre outros.";
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/bluetooth");
+            imageT.sprite = typeImage;
         }
         if (nameInfo == "share")
         {
@@ -63,12 +70,16 @@ public class CardsInfo2 : MonoBehaviour
             typeCard.text = "Você achou o Compartilhar!";
             typeInfo.text = "O botão Compartilhar, muitas vezes visto em redes sociais, é uma maneira fácil de compartilhar conteúdo com outras"+
                             " pessoas, pois todas os meios de compartilhamento estarão agrupados naquele botão.";
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/share");
+            imageT.sprite = typeImage;
         }
         if (nameInfo == "wifi")
         {
             Pause();
             typeCard.text = "Você achou o Wi-fi!";
             typeInfo.text = "O Wi-fi é um meio de se acessar a internet sem a necessidade de cabos, é necessário apenas estar na área de abrangência de seu sinal.";
+            typeImage = Resources.Load<Sprite>("Sprites/Icons/wifi");
+            imageT.sprite = typeImage;
         }
     }
 }
