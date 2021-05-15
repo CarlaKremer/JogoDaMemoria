@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
 //informações das cartas encontradas
+[RequireComponent(typeof(AudioSource))]
 public class CardsInfo : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -13,9 +14,12 @@ public class CardsInfo : MonoBehaviour
     GameObject gc;  //gc: GameController
     GameController gcs;
 
+    //som
+    public AudioClip succeed;
+    AudioSource audioSource;
+
     public Text typeCard;
     public Text typeInfo;
-    
     Sprite typeImage;
     public Image imageT;
 
@@ -42,6 +46,9 @@ public class CardsInfo : MonoBehaviour
         gcs = gc.GetComponent<GameController>();
 
         nameInfo = gcs.infoName;  //pega o nome da carta para saber qual informação exibir
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(succeed, 0.7F);
 
         if (nameInfo == "pix")
         {

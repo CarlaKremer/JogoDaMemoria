@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 7fd7c8760a849144d8fe0dd7d9125aa4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Atma
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8c2d51e9efa716d4ea58be7a5a0988e1, type: 3}
+  - {fileID: 12800000, guid: 4bd656659d291f24fa4a8462149e8641, type: 3}
+  - {fileID: 12800000, guid: 50a88737018d46444bc225a432644851, type: 3}
+  - {fileID: 12800000, guid: 9ed81e3a44b6e8b4783703f68b0130c5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

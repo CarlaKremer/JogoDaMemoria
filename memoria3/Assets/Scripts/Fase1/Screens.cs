@@ -5,13 +5,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class Screens : MonoBehaviour
 {
     public Text movements;
 
+    //telas
     public GameObject VirusScreenUI;
     public GameObject GameEndedUI;
     public GameObject InstructionsUI;
+
+    //som
+    public AudioClip fail;
+    AudioSource audioSource;
 
     GameObject Gc; //Gc: GameController
     GameController Gcs;  
@@ -30,6 +36,8 @@ public class Screens : MonoBehaviour
     public void VirusScreen() //tela alertando de que o virus foi achado, então jogo vai reiniciar
     {
         VirusScreenUI.SetActive(true);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(fail, 0.7F);
     }
 
     public void NextScene() //carrega próxima fase
@@ -37,7 +45,7 @@ public class Screens : MonoBehaviour
         SceneManager.LoadScene("Fase2");
     }
 
-    public void ResetButton()//função que está no botão de reinicialização
+    public void ResetButton()//botão do vírus, reseta fase
     {
         SceneManager.LoadScene("Game");
     }
