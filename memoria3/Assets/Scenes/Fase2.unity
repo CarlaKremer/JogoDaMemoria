@@ -308,7 +308,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1208167262}
         m_TargetAssemblyTypeName: Screens2, Assembly-CSharp
-        m_MethodName: ResetButton
+        m_MethodName: EndButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1442,6 +1442,7 @@ MonoBehaviour:
   movements: {fileID: 782586390}
   VirusScreenUI: {fileID: 6003644136309720019}
   GameEndedUI: {fileID: 1376527195}
+  EndUI: {fileID: 2035718775}
   fail: {fileID: 8300000, guid: 5fdb13d3756c84fecac96f5a2d124370, type: 3}
 --- !u!82 &1208167263
 AudioSource:
@@ -2292,7 +2293,7 @@ GameObject:
   - component: {fileID: 2035718778}
   - component: {fileID: 2035718777}
   m_Layer: 5
-  m_Name: GameEnded
+  m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2823,7 +2824,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continuar
+  m_Text: Voltar para o menu
 --- !u!222 &6407632365204507308
 CanvasRenderer:
   m_ObjectHideFlags: 0

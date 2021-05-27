@@ -11,6 +11,7 @@ public class Screens2 : MonoBehaviour
 
     public GameObject VirusScreenUI;
     public GameObject GameEndedUI;
+    public GameObject EndUI;
 
     //som
     public AudioClip fail;
@@ -42,4 +43,9 @@ public class Screens2 : MonoBehaviour
         SceneManager.LoadScene("Fase2");
     }
 
+    public void EndButton() //abre tela do fim para voltar ao menu
+    {
+        GameEndedUI.SetActive(false);
+        EndUI.SetActive(true);
+    }
 }
